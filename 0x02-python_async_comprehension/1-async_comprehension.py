@@ -2,7 +2,7 @@
 '''Async comprehension
 '''
 import asyncio
-from typing import Generator
+from typing import List
 import random
 from importlib import import_module as find
 
@@ -10,7 +10,7 @@ from importlib import import_module as find
 async_generator = find('0-async_generator').async_generator
 
 
-async def async_comprehension() -> Generator[float, None, None]:
+async def async_comprehension() -> List[float]:
     '''
     looping through an async async generator function
     using async list comprehension
